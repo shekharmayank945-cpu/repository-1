@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🌸 Period Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🌸 Period Tracker</h1>
+  <div class="container">
+    <label>Period Start Date:</label>
+    <input type="date" id="start">
+
+    <label>Cycle Length (days):</label>
+    <input type="number" id="cycle" value="28">
+
+    <label>Notes:</label>
+    <textarea id="notes"></textarea>
+
+    <button onclick="saveCycle()">Save Cycle</button>
+    <button onclick="predict()">Predict Next Period</button>
+
+    <div id="result"></div>
+    <canvas id="chart"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
